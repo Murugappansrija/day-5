@@ -1,0 +1,225 @@
+1)print a odd no  in array using anonymous function
+
+
+var prime = function(no){
+  return no%2 ==1
+  
+}
+ var b = function (){
+   var ip = [1,2,3,4,5,6,7,8,9].filter(prime)
+  console.log(ip) 
+ }
+ b()
+
+
+2)sum of the number in arry using anonymous function
+
+var sum = function(no){
+  let b = no.toString().split("").map(Number)
+  
+let initial= 0
+for(let i = 0;i<b.length;i++){
+  initial+= b[i]
+}
+
+  console.log(initial)
+}
+sum(123)
+
+
+3)palindrome using anonymous function
+
+var a = function(arr){
+  let b = arr.toString().split(",").map(Number)
+    let c =[]
+    for(let i = 0;i<b.lenth;i++ ){
+      c.push(b[i])
+      if(b[i] == b.reverse){
+        console.log(c)    
+  }
+    }
+  }
+  a (123,321,121)
+
+
+}
+
+4)return a prime no in array using anonymous function
+
+var arr = [10,20,3,4,5,6,7,8,9,11,13,14,17]
+var primeno = []
+let anyf= function (no){
+  let initial = no/2
+  for(let i =2; i<=initial; i++){
+    if((no % i) == 0) {
+      return false
+    }
+  }
+  return true
+}
+  for (let j =0; j<arr.length;j++){
+    if(anyf(arr[j])){
+      primeno.push(arr[j])
+    }
+  }
+   console.log(primeno)
+   
+
+5) remove duplicate element in array using anonymous function
+
+
+var a= [1,2,3,45,2,1]
+let remove= function(a){
+  return a.filter((e,i)=> a.indexOf(e)==i)
+  }
+console.log(remove(a))
+
+
+6)convert all string to title caps 
+
+
+var a= function(cap){
+let b= cap.toLowerCase().split(" ")
+  for(let i= 0;i<b.length;i++){
+    b[i] = b[i].charAt().toUpperCase()+b[i].slice(1)
+  }
+ 
+return b.join(" ")
+}
+console.log(a("i am guvi student"))
+
+
+7)print a odd no  in array using arrow function
+
+
+var prime = (no)=>{
+  return no%2 ==1
+  
+}
+ var b = function (){
+   var ip = [1,2,3,4,5,6,7,8,9].filter(prime)
+  console.log(ip) 
+ }
+ b()
+
+
+8)palindrome using IIFE function
+
+ (function a(arr){
+  let b = arr.toString().split(",").map(Number)
+    let c =[]
+    for(let i = 0;i<b.lenth;i++ ){
+      c.push(b[i])
+      if(b[i] == b.reverse){
+        console.log(c)    
+  }
+    }
+  })
+   (123,321,121)
+
+
+
+9)sum of the number in arry using arrow function
+
+var sum = (no)=>{
+  let b = no.toString().split("").map(Number)
+  
+let initial= 0
+for(let i = 0;i<b.length;i++){
+  initial+= b[i]
+}
+
+  console.log(initial)
+}
+sum(123)
+
+
+10)palindrome using arrow function
+
+var a = (arr) => {
+  let b = arr.toString().split(",").map(Number)
+    let c =[]
+    for(let i = 0;i<b.lenth;i++ ){
+      c.push(b[i])
+      if(b[i] == b.reverse){
+        console.log(c)    
+  }
+    }
+  }
+  a (123,321,121)
+
+11) remove duplicate element in array using arrow function
+
+
+var a= [1,2,3,45,2,1]
+let remove= (a)=>{
+  return a.filter((e,i)=> a.indexOf(e)==i)
+  }
+console.log(remove(a))
+
+12)print a odd no  in array using IIFE function
+
+
+(function prime(no){
+  return no%2 ==1
+  
+})
+ (function b (){
+   var ip = [1,2,3,4,5,6,7,8,9].filter(prime)
+  console.log(ip) 
+ }) ()
+
+
+13)return a prime no in array using anonymous function
+
+var arr = [10,20,3,4,5,6,7,8,9,11,13,14,17]
+var primeno = []
+let anyf=(no)=>{
+  let initial = no/2
+  for(let i =2; i<=initial; i++){
+    if((no % i) == 0) {
+      return false
+    }
+  }
+  return true
+}
+  for (let j =0; j<arr.length;j++){
+    if(anyf(arr[j])){
+      primeno.push(arr[j])
+    }
+  }
+   console.log(primeno)
+
+
+14)convert all string to title caps 
+
+
+var a= (cap)=>{
+let b= cap.toLowerCase().split(" ")
+  for(let i= 0;i<b.length;i++){
+    b[i] = b[i].charAt().toUpperCase()+b[i].slice(1)
+  }
+ 
+return b.join(" ")
+}
+console.log(a("i am guvi student"))
+
+16)sum of the number in arry using iife function
+
+
+ (function sum (no){
+  let b = no.toString().split("").map(Number)
+  
+let initial= 0
+for(let i = 0;i<b.length;i++){
+  initial+= b[i]
+}
+
+  console.log(initial)
+})
+(123)
+
+
+
+
+
